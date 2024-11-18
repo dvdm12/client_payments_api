@@ -34,7 +34,7 @@
         // Obtener datos de tenants desde el servidor
         async function fetchTenants() {
             try {
-                const response = await fetch('http://192.168.164.119:8000/api/tenants'); // Cambia la URL si es necesario
+                const response = await fetch('/api/tenants'); // Cambia la URL si es necesario
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }

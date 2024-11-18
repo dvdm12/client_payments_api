@@ -26,7 +26,7 @@ document.getElementById('create-tenant-form').addEventListener('submit', async (
 
     try {
         // Hacer la solicitud POST
-        const response = await fetch('http://192.168.164.119:8000/api/tenants', {
+        const response = await fetch('/api/tenants', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
